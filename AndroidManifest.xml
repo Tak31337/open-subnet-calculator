@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+ * Copyright (c) 2010 Tak's Mind
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.opensource.org/licenses/eclipse-1.0.php
+ * Contributors:
+ *
+ *    Tak's Mind - Open Subnet Calculator
+ *
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.taksmind.subnetcalc"
+      android:versionName="1.2" android:versionCode="3">
+    <uses-sdk android:minSdkVersion="3" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/subnettingapi">
+        <activity android:name=".SubnettingCalculatorActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>
